@@ -1,0 +1,73 @@
+@use "../00-core" as *;
+
+.o-modal {
+
+  &:before {
+    content: '';
+    display: none;
+    background: $color__modal_BackgroundBefore;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+  }
+
+  &--open:checked ~ &:before, 
+  &--open:checked ~ & &--overlay {
+    display: block;
+  }
+
+  &--open:checked ~ & &__dialog {
+    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 40%;
+  }
+
+  &--overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 102;
+  }
+
+  &__dialog {
+    background: $color__modal_Background;
+    border-color: $color__modal_border;
+    border-style: $border__modal_style;
+    border-radius: $border__modal_radius;
+    border-width: $border__modal_width;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%,-150%);
+    transition: transform .6s ease-in-out;
+    width: 80%;
+    max-width: 600px;
+    z-index: 103;
+  }
+
+  &__header {
+    border-bottom-color: $color__modalHeader_border;
+    border-bottom-style: $border__modalHeader_style;
+    border-bottom-width: $border__modalHeader_width;
+  }
+  
+  &__header, 
+  &__footer,
+  &__body {
+    padding: $padding__modal;
+  }
+  
+  &__footer {
+    border-top-color: $color__modalFooter_border;
+    border-top-style: $border__modalFooter_style;
+    border-top-width: $border__modalFooter_width;
+    text-align: $align__modalFooter_button;
+  }
+
+}

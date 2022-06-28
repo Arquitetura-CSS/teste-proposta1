@@ -1,0 +1,15 @@
+/* 
+    utilizado para se designar a estrutura geral da estilização do CSS
+    usado apenas para as tags:
+      - html
+      - body
+*/
+
+@use "." as *;
+
+html {
+    color: $color__main_text;
+    font-family: $font__main_textFamily;
+    font-size: $font__main_textSize;
+    line-height: $font__main_textLineHeight;  
+}

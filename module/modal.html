@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="../sass-design-atomic/style.css" media="screen" />
+  <title>Arquitetura CSS com Design Atômico - Proposta 1</title>
+</head>
+
+<body>
+  <section class="o-content">
+    <!-- Utilizado o segundo link do exemplo 6 da modal, Fonte: https://www.developerdrive.com/10-pure-css-modal-window-snippets/ -->
+
+    <h1 class="a-title__headline">Modal</h1>
+
+    <p>
+      Esta modal vem de um 
+      <a href="https://css-components.felipefialho.com/#component-modal">pacote completo de soluções CSS</a> criadas pelo desenvolvedor Felipe Fialho.
+    </p>
+
+    <p>
+      O exemplo abaixo foi modificado para contemplar as estilizações do design da Nasajon:
+    </p>
+
+    <label class="m-button m-button--primary" for="u-connection__modal">
+      Acessar Modal
+    </label>
+
+    <!-- a dupla o-modal--open e u-connection__modal permitem chamar a modal usando o type="checkbox" |
+    o hidden="" oculta a visualização do checkbox, onde o type="checkbox" é usado para indicar que a .o-modal--open ao realizar um checked chama a modal e aplica as estilizações das classes: .o-modal .o-modal--overlay -->
+    <input class="o-modal--open" id="u-connection__modal" type="checkbox" hidden="">
+    
+    <!-- a classe o-modal permite a visualização da modal com o posicionamento da animação de transição -->
+    <div class="o-modal" aria-hidden="true" role="dialog">
+
+      <!-- permite sair da modal clicando para fora dela, qd comentado só sai da modal clicando no botão Ok |  -->
+      <label class="o-modal--overlay" for="u-connection__modal"></label> 
+
+      <!-- a classe o-modal__dialog mantém o conteúdo da modal oculto a página aguardando ser chamada além de aplicar a animação de transição de entrar em 0.6 segundos de cima para baixo -->
+      <div class="o-modal__dialog">
+
+        <div class="o-modal__header">
+          <h2 class="a-title__modal">
+            Exemplo de Modal
+          </h2>
+        </div>
+
+        <div class="o-modal__body">
+          <p>
+            Olá mundo, este é meu primeiro parágrafo em uma modal!
+          </p>
+        </div>
+
+        <div class="o-modal__footer">
+          <label class="m-button m-button--primary" for="u-connection__modal">
+            <i class="fas fa-check m-button--iconText"></i>
+            Ok
+          </label>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>

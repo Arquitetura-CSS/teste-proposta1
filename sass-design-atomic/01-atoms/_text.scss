@@ -1,0 +1,13 @@
+@use "../00-core" as *;
+
+.a-title__headline {
+    font-size: $font__headline_titleSize;
+    font-weight: $font__headline_titleWeight;
+    line-height: $font__headline_titleLineHeight;
+}
+
+.a-title__modal {
+    font-size: $font__modal_titleSize;
+    line-height: $font__modal_titleLineHeight;
+    margin: $margin__modalHeader_title;
+}

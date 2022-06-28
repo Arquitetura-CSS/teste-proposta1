@@ -1,0 +1,13 @@
+/* Configurações básicas do projeto - CORE */
+@use '00-core/scaffolding';
+@use '00-core/utilies';
+
+/* Classes individuais e elementos pequenos e reutilizáveis - ÁTOMOS */
+@use '01-atoms/text';
+
+/* Cria um elemento 'pai' para modificar os átomos - MOLÉCULAS */
+@use '02-molecules/button';
+
+/* Estruturas maiores do projeto, que podem modificar átomos e moléculas - ORGANISMOS*/
+@use '03-organisms/content';
+@use '03-organisms/modal';

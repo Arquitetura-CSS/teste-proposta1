@@ -1,0 +1,32 @@
+@use "../00-core" as *;
+
+.m-button {
+
+    border-radius: $border__button_radius;    
+    border-color: $color__button_border;
+    border-style: $border__button_style;
+    border-width: $border__button_width;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: $font__button_textWeight;
+    height: $height__button;
+    padding: $padding__button;
+    white-space: nowrap;
+    box-sizing: $height__button--sizing;
+
+    &--primary {
+        color: $color__button_text--primary;
+        background: $color__button_background--primary;
+    }
+    
+    &--primary:hover {
+        color: $color__button_text--primary-hover;
+        background: $color__button_background--primary-hover;
+        text-decoration: none;
+    }
+    
+    &--iconText {
+        margin: $margin__button_iconText;
+    }
+    
+}
