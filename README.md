@@ -9,7 +9,7 @@ O teste a ser realizado para esse projeto foi exemplificado o uso de uma página
 - [Figma (Design tokens)](https://medium.com/localizalabs/design-tokens-solu%C3%A7%C3%A3o-para-padroniza%C3%A7%C3%A3o-de-estilos-e-alinhamento-entre-designers-e-desenvolvedores-a58d8a3eab3a)
 
 Acesse o exemplo na prática desse teste da proposta 1:
-[Exemplo do teste da proposta 1](https://arquitetura-css.github.io/exemplo-proposta1/module/modal.html)
+[Exemplo do teste da proposta 1](https://arquitetura-css.github.io/teste-proposta1/module/modal.html)
 
 Acesse o documento elaborado na construção dessa proposta:
 [Arquitetura para CSS](https://docs.google.com/presentation/d/1jeDv0iAJrQ9jocTBRTm_CugquknrQU6OuLsgkAkTyHo/edit?usp=sharing)
