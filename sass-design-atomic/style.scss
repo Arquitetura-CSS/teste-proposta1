@@ -9,5 +9,6 @@
 @use '02-molecules/button';
 
 /* Estruturas maiores do projeto, que podem modificar átomos e moléculas - ORGANISMOS*/
+@use '03-organisms/card';
 @use '03-organisms/content';
 @use '03-organisms/modal';

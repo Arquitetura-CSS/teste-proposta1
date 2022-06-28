@@ -2,3 +2,9 @@
     este utilitário: u-connection__modal
     NÃO é uma classe, ele fará apenas a conexão dos elementos principais da modal.
 */
+
+@use "../00-core" as *;
+
+.nomearClasse2 {
+    margin-top: $margin__top--20;
+}

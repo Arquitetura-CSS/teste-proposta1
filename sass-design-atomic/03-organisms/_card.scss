@@ -1,0 +1,24 @@
+@use "../00-core" as *;
+
+.nomearClasse1 {
+
+    width: $width__card--sm;
+
+    .nomearClasse3 {
+        background-color: $color__cardHeader_Background;
+        border-color: $color__cardHeader_border;
+        border-radius: $border__cardHeader_radius;
+        border-style: $border__cardHeader_style;
+        border-width: $border__cardHeader_width;
+        padding: $padding__cardHeader;
+    }
+
+    .nomearClasse5 {
+        border-color: $color__cardBody_border;
+        border-radius: $border__cardBody_radius;
+        border-style: $border__cardBody_style;
+        border-width: $border__cardBody_width;
+        padding: $padding__cardBody;
+    }
+
+}

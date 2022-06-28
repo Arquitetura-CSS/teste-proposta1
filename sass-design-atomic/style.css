@@ -2,10 +2,12 @@
 /* variáveis para a MODAL  */
 /* variáveis para o BOTÃO */
 /* variáveis para a MODAL  */
+/* variáveis para a CARD  */
 /* variáveis para o TEXTO em geral dos projetos */
 /* variáveis para o BOTÃO */
 /* ------ primário */
 /* variáveis para a MODAL  */
+/* variáveis para a CARD  */
 /* variáveis para o TEXTO em geral dos projetos */
 /* 17.03px */
 /* 14.08px */
@@ -16,12 +18,16 @@
 /* 26.048px */
 /* 22.10px */
 /* variáveis para o BOTÃO */
+/* variáveis para a CARD  */
 /* variáveis para o BOTÃO */
 /* variáveis para o CONTEÚDO em geral dos projetos */
 /* variáveis para o BOTÃO */
 /* variáveis para a MODAL  */
+/* variáveis para a CARD  */
+/* variáveis para a UTILITÁRIO  */
 /* variáveis para o BOTÃO */
 /* variáveis para a MODAL  */
+/* variáveis para a CARD  */
 /* Importa todas as variáveis nesse arquivo com @foward*/
 /* 
     utilizado para se designar a estrutura geral da estilização do CSS
@@ -40,6 +46,10 @@ html {
     este utilitário: u-connection__modal
     NÃO é uma classe, ele fará apenas a conexão dos elementos principais da modal.
 */
+.nomearClasse2 {
+  margin-top: 20px;
+}
+
 .a-title__headline {
   font-size: 1.85rem;
   font-weight: bold;
@@ -49,6 +59,11 @@ html {
 .a-title__modal {
   font-size: 1.57rem;
   line-height: 1.85rem;
+  margin: 0;
+}
+
+.nomearClasse4 {
+  font-weight: bold;
   margin: 0;
 }
 
@@ -76,6 +91,25 @@ html {
 }
 .m-button--iconText {
   margin: 0 10px 0 0;
+}
+
+.nomearClasse1 {
+  width: 25%;
+}
+.nomearClasse1 .nomearClasse3 {
+  background-color: #eaeaea;
+  border-color: #eaeaea;
+  border-radius: 6px 6px 0 0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+}
+.nomearClasse1 .nomearClasse5 {
+  border-color: #eaeaea;
+  border-radius: 0 0 6px 6px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
 }
 
 .o-content {
